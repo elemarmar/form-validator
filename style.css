@@ -76,7 +76,7 @@ input:valid {
 }
 
 input:invalid {
-  border: 1.5px solid red;
+  border: 1.5px solid rgb(248, 71, 71);
 }
 
 button {
