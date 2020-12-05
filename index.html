@@ -14,7 +14,7 @@
     <div class="container">
       <h1>Sign Up Today!</h1>
       <!-- Form -->
-      <form id="form">
+      <form id="form" novalidate>
         <!-- Full Name -->
         <div class="form-group">
           <label for="name">Full Name</label>
@@ -25,6 +25,7 @@
             required
             minlength="3"
             maxlength="100"
+            name="fullName"
           />
         </div>
         <!-- Phone Number -->
@@ -36,6 +37,7 @@
             placeholder="555-555-5555"
             required
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            name="phone"
           />
         </div>
         <!-- Email Address -->
@@ -46,6 +48,7 @@
             id="email"
             placeholder="email@address.com"
             required
+            name="email"
           />
         </div>
         <!-- Website URL -->
@@ -56,6 +59,7 @@
             id="website"
             placeholder="http://example.com"
             required
+            name="website"
           />
         </div>
         <!-- Password -->
@@ -79,6 +83,7 @@
             placeholder="Confirm Password"
             required
             pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+            name="password"
           />
         </div>
         <button type="submit">Register</button>
